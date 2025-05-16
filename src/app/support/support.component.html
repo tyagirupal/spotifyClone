@@ -1,0 +1,126 @@
+<div class="support">
+    <div class="Color"></div>
+    <header>
+        <div class="headerImg">
+            <img src="https://support.spotifycdn.com/turnkey-masthead/consumer/logo-consumer-v2.svg" alt="" style="height: 5vh;">
+        </div>
+        <div class="headerCont">
+            <mat-icon>public</mat-icon>
+            <button><span>Explore Premium</span></button>
+            <button><span>Install App</span></button>
+            <button><mat-icon>perm_identity</mat-icon>Account</button>
+        </div>
+    </header>
+    <div class="Section">
+        <div style="display: flex; flex-direction: column; gap: 10px; width: 100%; justify-content: center; align-items: center;">
+            <div style="width: 40%; display: flex; flex-direction: column; justify-content: center; gap: 10px;">
+
+                <h3>Spotify support</h3>
+                <h2>How we can help you?</h2>
+        
+                <div class="sectionSpan">
+                    <span style="width: 100%;display: flex; gap: 10px;font-size: 20px;"><a href="https://accounts.spotify.com/en-GB/login/?continue=https%3A%2F%2Fsupport.spotify.com%2Fin-en%2F">Login</a>for faster help</span>
+                </div>
+                <div class="sectionInput">
+                    <input type="text" placeholder="Search">
+                </div>
+                
+                <div style="width: 100%;">
+                    <mat-accordion class="example-headers-align" *ngFor="let data of liData">
+                        <mat-expansion-panel  hideToggle>
+                            <mat-expansion-panel-header>
+                              <mat-icon style="color: white;">payment</mat-icon>
+                            <mat-panel-description >
+                                {{data.label}}
+                            </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <div *ngFor="let items of data.item">
+                            <li>{{items.items}}</li>
+                        </div>
+                        
+                        </mat-expansion-panel>
+                    </mat-accordion>
+        
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sectionContainer">
+            <div *ngFor="let data of quickHelpData" style="background-color: #2a2a2a; color: white; display: flex;
+            padding: 2%; flex-direction: column; justify-content: center; align-items: center;">
+            <div style="width: 50%; display: flex; flex-direction: column; gap: 30px;">
+
+                <h2>{{data.heading}}</h2>
+                <ul style="padding: 0;"><li *ngFor="let data of data.helpLi" style="display: flex; justify-content: space-between; margin: 0;">
+                    <a href={{data.link}} style="padding: 10px 0;">{{data.data}} </a>
+                    <mat-icon>keyboard_arrow_right</mat-icon>
+
+                </li></ul>
+            </div>
+            </div>
+        </div>
+
+        <div class="sectionContainertwo">
+            <div style="padding: 5%; display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;">
+                <h1 style="font-size: 45px; font-weight: 700;">Visit our Community</h1>
+                <p  style="font-size: 16px; font-weight: 400;">Have questions? Find answers from our worldwide Community of expert fans!</p>
+                <!-- <button><a href="https://community.spotify.com/t5/FAQs/tkb-p/Spotify-Answers"></a> Go to Community</button> -->
+                <a href="https://community.spotify.com/t5/FAQs/tkb-p/Spotify-Answers" target="_blank" style="text-decoration: none; width: 20%;">
+                    <button style="background-color: #1ed760; padding: 8%; font-weight: 500; border-radius: 25px;">Go to Community</button>
+                  </a>
+                  
+            </div>
+        </div>
+
+        <footer>
+            <div class="fotterFirst">
+                <div class="fotterFirstFirst">
+                    <a href="https://open.spotify.com/" target="_blank"><img src="https://support.spotifycdn.com/turnkey-masthead/consumer/logo-consumer-v2.svg" alt="" style="height: 5vh;">
+                    </a>
+                </div>
+                <div class="fotterFirstTwo" *ngFor="let Fotter of fotterCont">
+                    <ul >
+                        <li *ngFor="let data of Fotter.fotterLi">
+                            <a href={{data.link}}>{{data.data}}</a>
+                        </li>
+                    </ul>
+                    <ul >
+                        <li *ngFor="let data of Fotter.fotterLiTwo">
+                            <a href={{data.link}}>{{data.data}}</a>
+                        </li>
+                    </ul>
+                    <ul >
+                        <li *ngFor="let data of Fotter.fotterLiThird">
+                            <a href={{data.link}}>{{data.data}}</a>
+                        </li>
+                    </ul>
+                    <ul >
+                        <li *ngFor="let data of Fotter.fotterLiFourth">
+                            <a href={{data.link}}>{{data.data}}</a>
+                        </li>
+                    </ul>
+                    
+
+                </div>
+                <div class="fotterFirstThird">
+                    <a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fspotify%2F&is_from_rle" target="_blank">	
+                        <mat-icon>camera_enhance</mat-icon></a>
+                    <a href="https://x.com/spotify" target="_blank">	
+                        <img src="https://upload.wikimedia.org/wikipedia/en/6/60/Twitter_Logo_as_of_2021.svg" alt="Twitter" width="40">
+                    </a>
+                    <a href="https://www.facebook.com/Spotify" target="_blank">	
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Netflix_icon.svg" alt="Netflix" width="40">
+
+                    </a>
+                </div>
+
+            </div>
+            <div class="fotterSecond">
+                <p>© 2025 Spotify AB</p>
+            </div>
+        </footer>
+       
+    </div>
+
+</div>

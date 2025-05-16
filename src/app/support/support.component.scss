@@ -1,0 +1,126 @@
+.support{
+    position: absolute;
+    top: 5.5rem;
+    display: contents;
+}
+li {
+    list-style: none;
+    margin-left: 4%;
+    color: white;
+
+}
+mat-accordion{
+    width: 50%;
+    /* padding: 2%; */
+    /* margin: 2%; */
+}
+.Section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin: 71px; */
+    gap: 15px;
+    background-color: black;
+    color: white;
+}
+// .Color{
+//     background-image: linear-gradient(90deg, #1ed760,  rgba(18, 18, 18, 0.3));
+//     height: 25vh;
+//     position: relative;
+//     top: 10vh;
+// }
+
+header {
+    // position: absolute;
+    background-image: linear-gradient(90deg, #1ed760,  rgba(18, 18, 18, 0.3));
+    padding: 2%;
+    margin: 71px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    // background: transparent !important;
+}
+.headerCont {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 1%;
+    display: flex ;
+    align-items: center;
+}
+input {
+    width: 100%;
+    border-radius: 3px;
+    padding: 2%;
+}
+.sectionInput {
+    width: 100%; 
+}
+h2{
+    font-size: 40px;
+}
+mat-panel-description{
+    color: white;
+}
+span.mat-content.ng-tns-c45-1 {
+    color: white;
+}
+mat-expansion-panel{
+    background-color: #2a2a2a;
+    border-bottom:1px solid white ;
+    padding: 1.5%;
+}
+
+.sectionContainer {
+    width : 100%;
+}
+a {
+
+    text-decoration: underline;
+    color: white;
+    
+}
+.sectionContainertwo {
+    width: 100%;
+}
+footer {
+    width: 100%;
+    background-color: black;
+}
+.fotterFirst {
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+    border-bottom: 1px solid white;
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        li{
+            a{
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration:underline
+            }
+        }
+    }
+    
+}
+.fotterFirstTwo{
+    display: flex;
+}
+.fotterSecond {
+    color: white;
+    margin: 3.5rem;
+}
+.sectionContainertwo{
+    background-color: #0f0e0e;
+    color: white;
+}
